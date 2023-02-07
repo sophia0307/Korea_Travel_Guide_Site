@@ -1,0 +1,44 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Root */
+:root{
+    /* color */
+    --color-black: #010101;
+    --color-white: #f9f9f9;
+    --color-light-gray: #f6f6f6;
+    --color-gray: #f0f2f7;
+    --color-blue: #5558e3;
+    --color-green: #36a142;
+    --color-red: #f15b5b;
+    /* font-weight */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semiBold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extraBold: 800;
+    --font-weight-black: 900;
+    /* font-family */
+    --font-family-notoSansKr: 'Noto Sans KR', sans-serif;
+    --font-family-notoSans: 'Noto Sans', sans-serif;
+    /* font-size */
+    --font-size-sm: 0.9rem;   /*14px*/
+    --font-size-base: 1rem;   /*16px*/
+    --font-size-md: 1.25rem;  /*20px*/
+    --font-size-lg: 1.5rem;   /*24px*/
+    --font-size-xl: 2rem;     /*32px*/
+    --font-size-xxl: 3rem;    /*48px*/
+}
+
+/* Universal Tags */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+ul{padding-left: 0;}
+li{list-style: none;}
+button{cursor: pointer;}
+img{vertical-align: top;}
+html{font-size: 16px;}
+body{font-size: 100%; font-family: var(--font-family-notoSans);}
+
+/***************************** start *****************************/
