@@ -8,6 +8,7 @@
     --color-white: #ffffff;
     --color-light-gray: #f6f6f6;
     --color-gray: #f0f2f7;
+    --color-dark-gray: #333333;
     --color-blue: #5558e3;
     --color-green: #36a142;
     --color-red: #f15b5b;
@@ -42,3 +43,96 @@ html{font-size: 16px;}
 body{font-size: 100%; font-family: var(--font-family-notoSans);}
 
 /***************************** start *****************************/
+.inner_wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content_between{justify-content: space-between;}
+
+/* header > top_nav */
+.top_nav{
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-gray);
+}
+.top_nav .date{
+    margin-right: 10px;
+}
+.top_nav .top_left span{
+    color: var(--color-dark-gray);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
+}
+.top_nav .top_right .lang_wrap{
+    min-height: var(--font-size-sm);
+    line-height: inherit;
+    font-size: var(--font-size-sm);
+    position: relative;
+    padding: 5px 20px 5px 40px;
+    cursor: pointer;
+    background: url(../images/ico_lang.png) no-repeat left / contain;
+    transition: all .3s;
+}
+.top_nav .top_right .lang_wrap.active{
+    background-image: url(../images/ico_lang_hover.png);
+}
+.top_nav .top_right .lang_wrap::after{
+    content:'|';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 0;
+}
+.top_nav .top_right .lang_wrap > a{
+    padding-right: 20px;
+    font-size: var(--font-size-sm);
+    background: url(../images/ico_lang_arr.png) no-repeat right;
+    transition: all .3s;
+}
+.top_nav .top_right .lang_wrap.active > a{
+    color: var(--color-green);
+    background-image: url(../images/ico_lang_arr_hover.png);
+}
+.top_nav .top_right .lang_wrap .lang{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    text-align: center;
+    border: 1px solid var(--color-dark-gray);
+    background-color: var(--color-white);
+    display: none;
+}
+.top_nav .top_right .lang_wrap .lang.active{
+    display: block;
+}
+.top_nav .top_right .lang_wrap .lang > li > a{
+    display: block;
+    padding: 8px;
+    transition: all .3s;
+}
+.top_nav .top_right .lang_wrap .lang > li > a:hover{
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+.top_nav .top_right .lang_wrap:hover{
+    background-image: url(../images/ico_lang_hover.png);
+}
+.top_nav .top_right .lang_wrap:hover > a{
+    color: var(--color-green);
+}
+.top_nav .top_right .top_sns{
+    padding: 0 5px;
+    align-items: center;
+}
+.top_nav .top_right .top_sns li a{
+    padding: 0 8px;
+    font-size: var(--font-size-md);
+    transition: all .3s;
+}
+.top_nav .top_right .top_sns li a:hover{
+    color: var(--color-green);
+}

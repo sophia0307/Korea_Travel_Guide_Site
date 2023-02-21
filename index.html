@@ -22,42 +22,48 @@
 <body>
     <!-- header > navbar -->
     <header>
-        <div class="inner_wrap">
-            <section class="top_nav">
+        <section class="top_nav">
+            <div class="inner_wrap flexbox justify-content_between">
                 <div class="top_left">
-                    <span class="date"></span>
-                    <span> Seoul Korea</span>
+                    <span id="date" class="date"></span>
+                    <span>Seoul Korea</span>
                 </div>
-                <div class="top_right">
+                <div class="top_right flexbox">
                     <!-- lang -->
-                    <select name="language" id="lang">
-                        <option value="en">ENGLISH</option>
-                        <option value="ja">日本語</option>
-                        <option value="zh-Hans">中文(简体)</option>
-                        <option value="zh-Hant">中文(繁體)</option>
-                        <option value="fr">Français</option>
-                        <option value="es">Español</option>
-                        <option value="de">Deutsch</option>
-                        <option value="ru">Pусский</option>
-                        <option value="th">ภาษาไทย</option>
-                        <option value="id">Bahasa Indonesia</option>
-                        <option value="vi">Tiếng Việt</option>
-                        <option value="ar">عربي</option>
-                        <option value="kr">한국어</option>
-                    </select>
+                    <div class="lang_wrap active">
+                        <a href="#" hreflang="en">ENGLISH</a>
+                        <ul class="lang active">
+                            <!-- <li><a href="#" hreflang="en">ENGLISH</a></li> -->
+                            <li><a href="#" hreflang="ja">日本語</a></li>
+                            <li><a href="#" hreflang="zh-Hans">中文(简体)</a></li>
+                            <li><a href="#" hreflang="zh-Hant">中文(繁體)</a></li>
+                            <li><a href="#" hreflang="fr">Français</a></li>
+                            <li><a href="#" hreflang="es">Español</a></li>
+                            <li><a href="#" hreflang="de">Deutsch</a></li>
+                            <li><a href="#" hreflang="ru">Pусский</a></li>
+                            <li><a href="#" hreflang="th">ภาษาไทย</a></li>
+                            <li><a href="#" hreflang="id">Bahasa Indonesia</a></li>
+                            <li><a href="#" hreflang="vi">Tiếng Việt</a></li>
+                            <li><a href="#" hreflang="ar">عربي</a></li>
+                            <li><a href="#" hreflang="kr">한국어</a></li>
+                        </ul>
+                    </div>
                     <!-- sns -->
-                    <ul class="top_sns">
+                    <ul class="top_sns flexbox">
                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                     </ul>
                 </div>
-            </section>
-            <section class="search_nav">
-            </section>
-            <nav class="navbar"></nav>
-        </div>
+            </div>
+        </section>
+        <section class="search_nav">
+            <div class="inner_wrap"></div>
+        </section>
+        <nav class="navbar">
+            <div class="inner_wrap"></div>
+        </nav>
     </header>
     <!-- /header > navbar -->
     <!-- main -->
