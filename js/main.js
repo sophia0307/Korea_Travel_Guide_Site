@@ -7,4 +7,10 @@ const dateContent = document.getElementById('date');
 
 dateContent.innerText = `${today}`;
 
+// top nav - languge메뉴 이벤트
+const langWrap = document.querySelector('.lang_wrap');
+const langList = document.querySelector('.lang');
 
+langWrap.addEventListener('click',()=>{
+    langWrap.classList.toggle('active');
+});

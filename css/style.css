@@ -112,7 +112,7 @@ body{font-size: 100%; font-family: var(--font-family-notoSans);}
     background-color: var(--color-white);
     display: none;
 }
-.top_nav .top_right .lang_wrap .lang.active{
+.top_nav .top_right .lang_wrap.active .lang{
     display: block;
 }
 .top_nav .top_right .lang_wrap .lang > li > a{
