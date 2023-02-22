@@ -76,6 +76,9 @@ body{font-size: 100%; font-family: var(--font-family-notoSans);}
     background: url(../images/ico_lang.png) no-repeat left / contain;
     transition: all .3s;
 }
+.top_nav .top_right .lang_wrap:hover{
+    background-image: url(../images/ico_lang_hover.png);
+}
 .top_nav .top_right .lang_wrap.active{
     background-image: url(../images/ico_lang_hover.png);
 }
@@ -92,6 +95,9 @@ body{font-size: 100%; font-family: var(--font-family-notoSans);}
     font-size: var(--font-size-sm);
     background: url(../images/ico_lang_arr.png) no-repeat right;
     transition: all .3s;
+}
+.top_nav .top_right .lang_wrap:hover > a{
+    color: var(--color-green);
 }
 .top_nav .top_right .lang_wrap.active > a{
     color: var(--color-green);
@@ -117,12 +123,6 @@ body{font-size: 100%; font-family: var(--font-family-notoSans);}
 .top_nav .top_right .lang_wrap .lang > li > a:hover{
     background-color: var(--color-green);
     color: var(--color-white);
-}
-.top_nav .top_right .lang_wrap:hover{
-    background-image: url(../images/ico_lang_hover.png);
-}
-.top_nav .top_right .lang_wrap:hover > a{
-    color: var(--color-green);
 }
 .top_nav .top_right .top_sns{
     padding: 0 5px;
