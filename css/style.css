@@ -185,6 +185,7 @@ body{font-size: 100%; font-family: var(--font-family-notoSans);}
 .search_nav .account li > a:hover{
     color: var(--color-green);
 }
+
 /* header > navbar */
 .navbar{
     border-bottom: 1px solid var(--color-gray);
@@ -212,3 +213,14 @@ body{font-size: 100%; font-family: var(--font-family-notoSans);}
     height: 3px;
     opacity: 1;
 }
+
+/* main > visual image slide */
+.visual_wrap{
+    width: 100%;
+}
+
+/* 
+object-fit: cover
+object-position:center
+inset:0; 
+*/
