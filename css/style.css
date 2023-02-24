@@ -39,8 +39,12 @@ ul{padding-left: 0;}
 li{list-style: none;}
 button{cursor: pointer;}
 img{vertical-align: top;}
-html{font-size: 16px;}
-body{font-size: 100%; font-family: var(--font-family-notoSans);}
+html{width: 100%;font-size: 16px;}
+body{
+    width: 100%;
+    font-size: 100%; 
+    font-family: var(--font-family-notoSans);
+}
 
 /***************************** start *****************************/
 .inner_wrap{
@@ -53,8 +57,9 @@ body{font-size: 100%; font-family: var(--font-family-notoSans);}
     align-items: center;
 }
 .justify-content_between{justify-content: space-between;}
-
+.justify-content_center{justify-content: center;}
 /* header > top_nav */
+header{width: 100%;}
 .top_nav{
     padding: 16px 0;
     border-bottom: 1px solid var(--color-gray);
@@ -217,8 +222,65 @@ body{font-size: 100%; font-family: var(--font-family-notoSans);}
 /* main > visual image slide */
 .visual_wrap{
     width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.visual_wrap .visual_container{
+    width: 700vw;
+}
+.visual_wrap .visual_container .visual{
+    display: block;
+    overflow: hidden;
+}
+.visual_wrap .visual_container .visual > img{
+    width: 100vw;
+    object-fit: cover;
+    object-position:center;
+    transition: transform 2s ease;
+}
+.visual_wrap .visual_container .visual.active > img{
+    transform: scale(1.1);
+}
+.visual_controll_bars{
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.visual_controll_bars .controll_bar{
+    /* width: 40px; */
+    /* height: 3px; */
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+.visual_controll_bars .controll_bar.active{
+    color:#36a142;
 }
 
+.controll_btn{
+    width: 70px;
+    height: 70px;
+    appearance: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    border: transparent;
+    background-color: rgb(0 0 0 / 70%);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semiBold);
+    text-align: center;
+    line-height: inherit;
+    color: var(--color-white);
+}
+.controll_btn.prev{
+    left: 0;
+}
+.controll_btn.next{
+    right: 0;
+}
 /* 
 object-fit: cover
 object-position:center
