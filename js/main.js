@@ -25,15 +25,13 @@ const visualContents = visualContent.length;
 const visualContainertWidth = visualContainer.offsetWidth;
 const visualContentWidth = visualContainertWidth/visualContents;
 let count = 0;
-let visualContentDate = document.querySelectorAll('.visual').dataset;
+
 //prev btn
 function prevCount(){
     console.log('prev')
     count--;
     console.log(count);
     visualContainer.style.transform = `translateX(-${count * visualContentWidth}px)`;
-    console.log(visualContentDate);
-    
 }
 //next btn
 function nextCount(){
@@ -41,7 +39,6 @@ function nextCount(){
     count++;
     console.log(count);
     visualContainer.style.transform = `translateX(-${count*visualContentWidth}px)`;
-    console.log(visualContentDate);
 }
 
 prevBtn.addEventListener('click',prevCount);
