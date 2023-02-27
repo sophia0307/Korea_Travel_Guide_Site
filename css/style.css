@@ -120,6 +120,7 @@ header{width: 100%;}
 }
 .top_nav .top_right .lang_wrap.active .lang{
     display: block;
+    z-index: 9;
 }
 .top_nav .top_right .lang_wrap .lang > li > a{
     display: block;
@@ -259,7 +260,6 @@ header{width: 100%;}
 .visual_controll_bars .controll_bar.active{
     color:#36a142;
 }
-
 .controll_btn{
     width: 70px;
     height: 70px;
